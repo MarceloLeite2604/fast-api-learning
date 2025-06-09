@@ -1,0 +1,16 @@
+{
+    "[python]": {
+        "editor.rulers": [90],
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args":["--profile", "black"],
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "terminal.integrated.scrollback": 50000,
+    "python.analysis.typeCheckingMode": "standard"
+}

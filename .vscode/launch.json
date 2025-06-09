@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug \"main.py\"",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "uvicorn src.main:app --reload --port 8001",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYDEVD_CONTAINER_RANDOM_ACCESS_MAX_ITEMS": "1000"
+            }
+        },
+        {
+            "name": "Debug \"main.py\" (justMyCode)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "uvicorn src.main:app --reload --port 8001",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYDEVD_CONTAINER_RANDOM_ACCESS_MAX_ITEMS": "1000"
+            }
+        }
+    ]
+}
